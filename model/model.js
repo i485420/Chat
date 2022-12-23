@@ -12,7 +12,7 @@ mongoose.connection.on('error', function (err) {
     console.log(err);
 });
 
-mongoose.connect('mongodb://192.168.50.3:27017/mongodb');
+mongoose.connect('mongodb://mongo:27017/mongodb');
 
 module.exports.user=mongoose.model('User',new Schema({
     name:String,
